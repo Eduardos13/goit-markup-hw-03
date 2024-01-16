@@ -22,18 +22,19 @@ img {
     display: block;
 }
 
-/* .container { 
-    max-width: ;
-    padding-left:  ;
-    padding-right:  ;
-    margin-left:  ;
-    margin-right:  ;
-    } */
+.container { 
+    width: 1158px ;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-    .header {
-        display: flex;
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
 
-    }
+.header_navigation {
+    display: flex;
+}
 
 .header_logo {
     font-family: "Raleway", sans-serif;
@@ -43,7 +44,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-left: 156px;
+    margin-right: 76px
 }
 
 .logo_studio {
@@ -52,15 +53,15 @@ img {
 
 .navigation {
     display: flex;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    align-items: center;
 } 
 
 .navigation_list {
     font-family: "Roboto";
     font-size: 16px;
     display: flex;
-    margin-left: 76px;
+    gap: 40px;
+    margin-right: 332px;
 }
 
 .navigation_item {
@@ -69,7 +70,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-right: 40px;
+    padding: 24px 0;
 } 
 
 
@@ -80,16 +81,15 @@ img {
 
 .contacts {
     font-style: normal;
-    margin-left: 292px;
-    margin-top: 24px;
     display: flex;
+    gap: 40px;
 }
 
 .address_item {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em; 
-    margin-right: 40px;
+
 }
 
 .address_item:hover,
@@ -99,11 +99,16 @@ img {
 
 .hero_image {
     background-color: #2E2F42;
-    width: 1440px;
-    height: 600px;
     justify-content: center;
     align-items: center;
+    padding: 188px 0;
+}
 
+.hero_image_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main_title {
@@ -112,8 +117,8 @@ img {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    width: 496px;
-    padding-top: 188px;
+    max-width: 496px; 
+    
 }
 
 .button {
@@ -125,11 +130,13 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    margin: 48px 635px 188px 636px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
-    border: 0;
+    border: none;
     border-radius: 4px;
+    display: block;
+    background-color:#4d5ae5; 
+    margin-top: 48px;
 }
 
 .button:hover,
@@ -137,14 +144,17 @@ img {
     background-color: #404BBF;
 }
 
-.about-us {
+.about_us {
+    padding: 120px 0
+}
+
+.about_us_list {
     display: flex;
-    width: 1128px;
-    flex-direction: row;
+    gap: 24px;
 }
 
 .about_us_item {
-    width: 264px;
+   width: calc((100% - 24px * 3) / 4);
 }
 
 .advantage {
@@ -153,6 +163,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .advantage_text {
@@ -163,6 +174,7 @@ img {
 
 .our_team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .section_name {
@@ -172,23 +184,28 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team_members {
     display: flex;
-justify-content: center;
+    gap: 24px;
+
 }
 
 .member {
     background-color: #FFFFFF;
     max-width: 100%;
-    margin-right: 24px;
     margin-bottom: 120px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: calc((100% - 24px * 3) / 4);
+    border-radius: 0px 0px 4px 4px; 
+}
+
+.member_info {
+    padding: 32px 0;
 }
 
 .name {
@@ -197,21 +214,20 @@ justify-content: center;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin: 32px 65px 0 65px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin: 8px 68px 32px 68px;
+    text-align: center; 
 }
 
 .our_product {
-    margin-top: 92px;
-    width: 1128px;
-    margin-left: 156px;
-    margin-right: 156px;
+    padding: 120px 0 120px 0;
+
 }
 
 .our_product_list {
@@ -225,10 +241,15 @@ justify-content: center;
     width: calc((100% - 2 * 24px) / 3);
 }
 
+.product_description {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .footer {
     background-color: #2E2F42;
-    width: 1440px;
-    height: 312px;
+    padding: 100px 0;
 }
 
 .footer_logo {
@@ -239,8 +260,8 @@ justify-content: center;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-top: 100px;
-    padding-left: 56px;
+    display: inline-block; 
+    margin-bottom: 16px; 
 }
 
 .footer_logo_studio {
@@ -253,7 +274,4 @@ justify-content: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    height: 72px;
-    padding-left: 56px;
-    padding-top: 16px;
 }
