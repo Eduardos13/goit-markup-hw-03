@@ -140,6 +140,7 @@ img {
 .about-us {
     display: flex;
     width: 1128px;
+    flex-direction: row;
 }
 
 .about_us_item {
@@ -206,8 +207,28 @@ justify-content: center;
     margin: 8px 68px 32px 68px;
 }
 
+.our_product {
+    margin-top: 92px;
+    width: 1128px;
+    margin-left: 156px;
+    margin-right: 156px;
+}
+
+.our_product_list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.our_product_item {
+    width: calc((100% - 2 * 24px) / 3);
+}
+
 .footer {
     background-color: #2E2F42;
+    width: 1440px;
+    height: 312px;
 }
 
 .footer_logo {
@@ -218,6 +239,8 @@ justify-content: center;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-top: 100px;
+    padding-left: 56px;
 }
 
 .footer_logo_studio {
@@ -229,4 +252,8 @@ justify-content: center;
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
+    height: 72px;
+    padding-left: 56px;
+    padding-top: 16px;
 }
