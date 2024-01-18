@@ -266,6 +266,12 @@ img {
     border-top: none;
 }
 
+.product_description .name,
+.product_description .description {
+    text-align: left;
+}
+
+
 .footer {
     background-color: #2E2F42;
     padding: 100px 0;
